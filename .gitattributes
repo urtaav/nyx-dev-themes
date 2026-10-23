@@ -1,0 +1,5 @@
+# gradlew debe mantener LF para correr en Linux/macOS/CI
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
+*.png binary

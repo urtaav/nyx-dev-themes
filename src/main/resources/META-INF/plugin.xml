@@ -1,0 +1,30 @@
+<idea-plugin>
+    <id>dev.nyxdevs.themes</id>
+    <name>NYX Dev Themes</name>
+    <vendor>NYX Devs</vendor>
+    <description><![CDATA[
+      <p>Dark glass themes for JetBrains IDEs, inspired by Nyx, the Greek goddess of night.</p>
+      <p>Layered warm near-black surfaces, a single lilac accent and an editor color scheme
+      tuned to match each UI theme.</p>
+      <h3>Included themes</h3>
+      <ul>
+        <li><b>NYX</b> — lilac keywords, lavender functions, peach strings and amber numbers.</li>
+        <li><b>NYX Blackout</b> — the NYX palette on pure black.</li>
+        <li><b>NYX Graphite</b> — near monochrome code with lilac keywords and a soft caret row.</li>
+        <li><b>NYX Eclipse</b> — lilac keywords, blue functions, mint strings and amber numbers.</li>
+      </ul>
+      <h3>How to use</h3>
+      <p>Go to <b>Settings → Appearance &amp; Behavior → Appearance</b> and pick a NYX theme.
+      The matching editor scheme is applied automatically; if not, select it under
+      <b>Editor → Color Scheme</b>.</p>
+      <p>Free and open. If NYX makes your nights better, you can
+      <a href="https://ko-fi.com/urtaav">buy me a coffee on Ko-fi</a>.</p>
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="dev.nyxdevs.themes.nyx" path="/NYX.theme.json"/>
+        <themeProvider id="dev.nyxdevs.themes.blackout" path="/NYX-Blackout.theme.json"/>
+        <themeProvider id="dev.nyxdevs.themes.graphite" path="/NYX-Graphite.theme.json"/>
+        <themeProvider id="dev.nyxdevs.themes.eclipse" path="/NYX-Eclipse.theme.json"/>
+    </extensions>
+</idea-plugin>

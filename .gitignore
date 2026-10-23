@@ -1,0 +1,18 @@
+# Gradle / IntelliJ Platform
+.gradle/
+build/
+out/
+.intellijPlatform/
+
+# IDE
+.idea/
+*.iml
+
+# Secretos: tokens de Marketplace, certificados de firma
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.*
